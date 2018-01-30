@@ -25,9 +25,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5Q-ew-qZX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="J0b-bl-U67">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="116" id="QAM-jn-v3x" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="116"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QAM-jn-v3x" id="YSN-Kx-nva">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
@@ -122,13 +127,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="a5Q-ew-qZX" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="7e5-r4-pkR"/>
                             <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="a5Q-ew-qZX" secondAttribute="bottom" id="95D-Qq-nw3"/>
+                            <constraint firstItem="a5Q-ew-qZX" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="C3z-rL-ZT7"/>
                             <constraint firstItem="a5Q-ew-qZX" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="ugs-OG-hGV"/>
                             <constraint firstAttribute="trailing" secondItem="a5Q-ew-qZX" secondAttribute="trailing" id="w0r-TS-pML"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="J0b-bl-U67" id="HDq-Vs-6aV"/>
                         <outlet property="tableView" destination="a5Q-ew-qZX" id="qIV-oQ-iaO"/>
                     </connections>
                 </viewController>

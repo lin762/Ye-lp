@@ -134,7 +134,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="searchBar" destination="J0b-bl-U67" id="HDq-Vs-6aV"/>
+                        <outlet property="searchBar" destination="J0b-bl-U67" id="mCk-op-H8c"/>
                         <outlet property="tableView" destination="a5Q-ew-qZX" id="qIV-oQ-iaO"/>
                     </connections>
                 </viewController>
